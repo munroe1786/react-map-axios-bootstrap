@@ -1,11 +1,9 @@
 import React from 'react';
 import { Container, NavBar } from 'react-bootstrap';
 
-const NavBar = () => {
+const NavBarCom = () => {
     return (
-        <div>
-            
-        </div>
+        <NavBar sticky='top' 
     )
 }
 
