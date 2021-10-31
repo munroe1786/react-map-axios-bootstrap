@@ -1,14 +1,14 @@
 import React from 'react';
-import { Container, Navbar, NavBar } from 'react-bootstrap';
+import { Container, Navbar } from 'react-bootstrap';
 
 const NavBarCom = () => {
     return (
-        <NavBar sticky='top' bg='primary' variant='dark'>
-            <Container>
+        <Navbar sticky='top' bg='primary' variant='dark'>
+            <Container>  
                 <Navbar.Brand href='#home'>Contact Form</Navbar.Brand>
             </Container>
-        </NavBar>
+        </Navbar>
     )
 }
 
-export default NavBar
+export default NavBarCom;
