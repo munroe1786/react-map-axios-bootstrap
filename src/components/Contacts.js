@@ -4,6 +4,10 @@ import { Col, Row } from 'react-bootstrap';
 
 const Contacts = () => {
 
+    useEffect(() => {
+        getContacts();
+    }, [])
+
     const [contacts, setContacts] = useState([])
     const [loading, setLoading] = useState(false);
 
