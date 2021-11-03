@@ -22,9 +22,16 @@ const Contacts = () => {
     }
 
     return (
-        <div>
-            
-        </div>
+        <Fragment>
+            <Row>
+                {loading && 
+                contacts.map((contact) => {
+                    <Col sm={12} md={6} lg={4} key={contact.login.uuid}>
+                        {contact.name.first}
+                    </Col>
+                })}
+            </Row>
+        </Fragment>
     )
 }
 
