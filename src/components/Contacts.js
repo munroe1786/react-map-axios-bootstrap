@@ -7,6 +7,16 @@ const Contacts = () => {
     const [contacts, setContacts] = useState([])
     const [loading, setLoading] = useState(false);
 
+    const getContacts = async () => {
+        try {
+            const res = await axios.get("https://randomuser.me/api/?results=12")
+            setContacts(res.data.results)
+            setLoading(true)
+        } catch (err) {
+            alert(err.message);
+        }
+    }
+
     return (
         <div>
             
