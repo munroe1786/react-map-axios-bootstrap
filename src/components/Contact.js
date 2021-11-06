@@ -6,7 +6,12 @@ const Contact = ({ contact }) => {
         <>
         <Card className='my-3 p-3 rounded h-90'>
             <Card.Img style={{objectFit:"containt"}} variant='top' src={contact.picture.large} />
-
+        <Card.Body>
+            <Card.Title>
+                {`${contact.name.first + " " + contact.name.last}`}
+            </Card.Title>
+        </Card.Body>
+        
 
         </Card>
         </>
