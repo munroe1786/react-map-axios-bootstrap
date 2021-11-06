@@ -3,9 +3,13 @@ import { Button, Card } from 'react-bootstrap';
 
 const Contact = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+        <Card className='my-3 p-3 rounded h-90'>
+            <Card.Img style={{objectFit:"containt"}} variant='top' src={contact.picture.large}>
+
+            </Card.Img>
+        </Card>
+        </>
     )
 }
 
