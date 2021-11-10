@@ -5,11 +5,18 @@ const Contact = ({ contact }) => {
     return (
         <>
         <Card className='my-3 p-3 rounded h-90'>
-            <Card.Img style={{objectFit:"containt"}} variant='top' src={contact.picture.large} />
+            <Card.Img 
+                style={{objectFit:"contain"}} 
+                variant='top' 
+                src={contact.picture.large} 
+            />
         <Card.Body>
             <Card.Title>
                 {`${contact.name.first + " " + contact.name.last}`}
             </Card.Title>
+            <Card.Subtitle classname=''>
+                
+            </Card.Subtitle>
         </Card.Body>
         
 
