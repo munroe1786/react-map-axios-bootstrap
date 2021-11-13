@@ -14,9 +14,12 @@ const Contact = ({ contact }) => {
             <Card.Title>
                 {`${contact.name.first + " " + contact.name.last}`}
             </Card.Title>
-            <Card.Subtitle classname=''>
-                
-            </Card.Subtitle>
+            <Card.Subtitle className='mb-2 text-muted'>Address</Card.Subtitle>
+            <Card.Text>
+                <div>
+                    <strong>Number:</strong> {contact.location.street.number}
+                </div>
+            </Card.Text>
         </Card.Body>
         
 
