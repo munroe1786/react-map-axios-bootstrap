@@ -19,6 +19,15 @@ const Contact = ({ contact }) => {
                 <div>
                     <strong>Number:</strong> {contact.location.street.number}
                 </div>
+                <div>
+                    <strong>Street:</strong> {contact.location.street.name}
+                </div>
+                <div>
+                    <strong>City:</strong> {contact.location.city}
+                </div>
+                <div>
+                    <strong>State:</strong> {contact.location.state}
+                </div>
             </Card.Text>
         </Card.Body>
         
