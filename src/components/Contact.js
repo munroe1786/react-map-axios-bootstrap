@@ -31,17 +31,19 @@ const Contact = ({ contact }) => {
             </Card.Text>
             <Card.Subtitle className='mb-2 text-muted'>Phone</Card.Subtitle>
             <Card.Text>
-                <div>
-                    {contact.phone}
-                </div>
+                <div>{contact.phone}</div>
             </Card.Text>
             <Card.Subtitle className='mb-2 text-muted'>Email</Card.Subtitle>
             <Card.Text>
-                <div>
-                    {contact.email}
-                </div>
+                <div>{contact.email}</div>
             </Card.Text>
-        
+            <a href={`mailto:${contact.email}`}><Button 
+                style={{ borderRadius: '20px' }} 
+                className='w-100' 
+                variant='primary'
+                >
+                Contact
+            </Button></a>
         </Card.Body>
         
 
